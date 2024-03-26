@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Saira Extra Condensed', sans-serif;
+    list-style-position: inside;
+}
+
+html,body{
+    height: 100%;
+}
+
+.parent{
+    display: flex;
+}
+
+.sidebar{
+    width: 20%;
+    height: 100%;
+    position: fixed;
+    background-color: #512679;
+}
+
+.sidebar-pos{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.img-sidebar{
+    text-align: center;
+}
+
+.img-sidebar img{
+    text-align: center;
+    width: 80%;
+    max-width: 100%;
+    border-radius: 50%;
+    border: 8px solid #874fb7;
+}
+
+.menu{
+    margin: 20px 0;
+    text-align: center;
+    position: relative;
+    left: -5px;
+}
+
+.menu a, .menu span{
+    display: block;
+    margin-top: 20px;
+    margin-left: 10%;
+    color: rgba(255, 255, 255, 0.5);
+    text-decoration: none;
+}
+
+.menu a:hover, .menu span{
+    color: white;
+}
+
+.content{
+    position: absolute;
+    left: 20%;
+    width: 80%;
+    height: 100%;
+    overflow-y: auto;
+    padding: 0 3%;
+}
+
+.content h2{
+    color: #343a40;
+    font-size: 46px;
+}
+
+.content h2 span,
+.content h3 a{
+    color: #874fb7;
+    text-decoration: none;
+}
+
+.content h3 a:hover{
+    color: rgb(105, 30, 175);
+}
+
+.content h3{
+    margin: 15px 0;
+    color: #6c757d;
+    font-size: 23px;
+}
+
+.content p, li, .skills{
+    font-size: 20px;
+}
+
+section.description{
+    position: relative;
+    top: 50px;
+}
+
+.insta, .face, .git{
+    display: inline-block;
+    text-align: center;
+    margin: 20px 50px 0 0;
+}
+
+.icons img{
+    width: 45px;
+    height: 45px;
+}
+
+.sub-title{
+    font-size: 23px;
+    margin-top: 20px;
+}
+
+.skills{
+    width: 75%;
+    padding-bottom: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between
+    ;
+}
