@@ -43,9 +43,10 @@ body {
     background-image: url('assets/images/banner-bg.jpg');
     background-position: center;
     background-size: cover;
+    transition: 0.3s;
 }
 
-.background .img-perfil{
+.background .img-perfil {
     position: absolute;
     width: 110px;
     height: 110px;
@@ -57,7 +58,9 @@ body {
     border: 5px solid #ee4a83;
 }
 
-.background h3, .background span, .background > h3 > span{
+.background h3,
+.background span,
+.background>h3>span {
     position: relative;
     top: 55%;
     transform: translateY(-55%);
@@ -66,7 +69,7 @@ body {
     color: white;
 }
 
-.background > span{
+.background>span {
     color: white;
     position: absolute;
     top: 90px;
@@ -74,12 +77,12 @@ body {
     font-size: 25px;
 }
 
-.background > h3 > span{
+.background>h3>span {
     margin-left: 0;
     color: #ee4a83;
 }
 
-.section > h2 {
+.section>h2 {
     margin: 20px 0;
     color: rgb(255, 255, 255);
 }
@@ -89,7 +92,7 @@ body {
     padding: 50px 20px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     margin: 0 auto;
     width: 100%;
     height: 600px;
@@ -107,13 +110,13 @@ body {
     padding-bottom: 20px;
 }
 
-.content div > h2{
+.content div>h2 {
     margin-left: 15px;
     color: white;
     font-weight: normal;
 }
 
-.content > div > a > div{
+.content>div>a>div {
     width: 90%;
     height: 90%;
     margin-left: 50%;
@@ -123,29 +126,30 @@ body {
     border: 1px solid black;
 }
 
-.content > div > a > div:hover{
+.content>div>a>div:hover {
     width: 100%;
     height: calc(100% + 30px);
     margin-top: -30px;
     transition: 0.3s;
 }
 
-.content .div1 .image-content{
+.content .div1 .image-content {
     background-image: url('assets/images/Atividade1-img.avif');
 }
 
-.content .div2 .image-content{
+.content .div2 .image-content {
     background-image: url('assets/images/Atividade2-img.avif');
 }
 
-.content .div3 .image-content{
+.content .div3 .image-content {
     background-image: url('assets/images/Atividade3-img.avif');
 }
-.content .div4 .image-content{
+
+.content .div4 .image-content {
     background-image: url('assets/images/Atividade4-img.avif');
 }
 
-.footer{
+.footer {
     padding: 15px 0;
     margin: 0 auto;
     width: 400px;
@@ -155,4 +159,52 @@ body {
     background-color: #e75e8d;
     color: black;
     border-radius: 25px;
+}
+
+@media screen and (max-width:1200px) {
+
+    .content {
+        height: 700px;
+    }
+
+    .content div {
+        display: block;
+        width: 48%;
+        height: 200px;
+        padding-bottom: 30px;
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (max-width:890px) {
+    .background {
+        background-position: -350px;
+        transition: 0.3s;
+    }
+
+    .background>h3>span {
+        font-size: 35px;
+    }
+
+    .content {
+        padding: 0 20px;
+        height: 2370px;
+    }
+
+    .content div {
+        display: block;
+        width: 100%;
+        height: 350px;
+        padding-bottom: 30px;
+        margin: 20px 0;
+    }
+
+}
+
+@media screen and (max-width:730px) {
+
+    .background {
+        background-position: -500px;
+        transition: 0.3s;
+    }
 }
