@@ -207,4 +207,8 @@ body {
         background-position: -500px;
         transition: 0.3s;
     }
+
+    .background > h3 > span{
+        font-size: 20px;
+    }
 }
