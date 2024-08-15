@@ -149,6 +149,10 @@ body {
     background-image: url('assets/images/Atividade4-img.avif');
 }
 
+.content .div5 .image-content {
+    background-image: url('assets/images/Atividade5.png');
+}
+
 .footer {
     padding: 15px 0;
     margin: 0 auto;

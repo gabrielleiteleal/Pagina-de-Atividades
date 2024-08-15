@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+}
+
+div{
+    border-radius: 7px;
+}
+
+.container{
+    position: relative;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: rgb(184, 249, 184);
+    border: 3px solid green;
+    width: 80%;
+    height: 60%;
+    padding: 10px;
+}
+
+.header{
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    background-color: rgb(158, 218, 238);
+    border: 3px solid blue;
+    padding: 10px;
+    gap: 10px;
+}
+
+.header .h1, .h2, .h3{
+    display: flex;
+    background-color: rgb(252, 207, 167);
+    border: 3px solid rgb(255, 140, 0);
+    flex-grow: 1;
+    align-items: center;
+    
+}
+
+.header .h2{
+    padding: 5px;
+    gap: 5px;
+}
+
+.h2 .h-f1, .h2 .h-f2{
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    height: 100%;
+    background-color: rgba(255, 0, 0, 0.417);
+    border: 3px solid red;
+
+}
+
+.main{
+    display: flex;
+    flex-direction: row;
+    flex-grow: 3;
+    gap: 10px;
+}
+
+.content{
+    display: flex;
+    flex-grow: 1;
+    background-color: rgb(252, 180, 192);
+    border: 3px solid brown;
+    
+}
+
+.aside{
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    gap: 10px;
+    
+}
+
+.aside .a-1, .a-2{
+    display: flex;
+    flex-grow: 1;
+    background-color: rgb(252, 180, 192);
+    border: 3px solid brown;
+}
+
+.footer{
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    background-color: rgb(158, 218, 238);
+    border: 3px solid blue;
+    padding: 10px;
+    gap: 10px;
+}
+
+.footer .f-1, .f-4{
+    display: flex;
+    background-color: rgb(102, 145, 159);
+    border: 3px solid rgb(208, 60, 241);
+    flex-grow: 2;
+}
+
+.footer .f-2, .f-3{
+    display: flex;
+    background-color: rgb(252, 207, 167);
+    border: 3px solid rgb(255, 140, 0);
+    flex-grow: 1;
+}
+
+a{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 95px;
+    margin: 0 auto;
+    width: 100px;
+    height: 60px;
+    background-color: rgb(155, 155, 155);
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    border-radius: 10px;
+}
