@@ -92,7 +92,7 @@ body {
     padding: 50px 20px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-evenly;
     margin: 0 auto;
     width: 100%;
     height: 600px;
@@ -151,6 +151,10 @@ body {
 
 .content .div5 .image-content {
     background-image: url('assets/images/Atividade5.png');
+}
+
+.content .div6 .image-content {
+    background-image: url('assets/images/Atividade6.png');
 }
 
 .footer {
